@@ -1,0 +1,25 @@
+mat-form-field {
+    width: 100%;
+}
+
+mat-option {
+    height: 2.5rem;
+    padding: 0 1rem;
+
+    .option-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        mat-icon {
+            font-size: 1.125rem;
+            height: 1.125rem;
+            width: 1.125rem;
+        }
+
+        span {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    }
+}

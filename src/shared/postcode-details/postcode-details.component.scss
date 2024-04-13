@@ -1,0 +1,48 @@
+.showing-results {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+
+    i {
+        font-weight: 500;
+    }
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.card {
+
+    mat-card-title {
+        font-size: 1.125rem;
+        color: rgb(0 62 120) !important;
+    }
+
+    mat-card-content {
+        margin-top: 0.625rem;
+    }
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+
+    mat-icon {
+        margin-right: .5rem;
+    }
+}
+
+.air-quality-index {
+    display: flex;
+    align-items: center;
+
+    mat-progress-spinner {
+        margin-right: .5rem;
+    }
+}

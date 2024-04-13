@@ -1,0 +1,17 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    height: 3.75rem;
+    z-index: 1001;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+    background-color: rgb(215 231 247);
+    padding: 1.25rem 3.75rem 3.125rem;
+
+    mat-card {
+        margin: 3.125rem auto;
+        padding: 2.5rem 1.5rem;
+    }
+}

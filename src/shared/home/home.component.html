@@ -1,0 +1,26 @@
+<header class="sticky-header">
+    <app-main-header></app-main-header>
+</header>
+
+
+<div class="home">
+    <mat-card>
+        <mat-card-content>
+            <app-postcode-search (postcodeSelected)="onPostcodeSelected($event)"></app-postcode-search>
+        </mat-card-content>
+    </mat-card>
+
+    @if (postcodeDetails()) {
+    <mat-card>
+        <mat-card-content>
+            <app-postcode-details [postcodeDetails]="postcodeDetails()"></app-postcode-details>
+        </mat-card-content>
+    </mat-card>
+    }
+
+    @if (errorMessage()) {
+    <app-no-results-found [title]="errorMessage()"></app-no-results-found>
+    }
+</div>
+
+<app-main-footer></app-main-footer>

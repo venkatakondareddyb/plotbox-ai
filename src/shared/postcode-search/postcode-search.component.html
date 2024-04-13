@@ -1,0 +1,16 @@
+<div class="full-page">
+  <mat-form-field appearance="fill">
+    <mat-label>Search Postcode</mat-label>
+    <input type="text" matInput [formControl]="searchControl" [matAutocomplete]="auto" (keyup.enter)="onEnter()" />
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+      @for (option of filteredOptions(); track option) {
+        <mat-option [value]="option">
+          <div class="option-item">
+            <mat-icon>location_on</mat-icon>
+            <span>{{ option }}</span>
+          </div>
+        </mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</div>

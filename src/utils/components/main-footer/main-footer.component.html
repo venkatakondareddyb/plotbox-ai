@@ -1,0 +1,31 @@
+<footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-content">
+      <div class="footer-info">
+        <a href="https://plotbox.com/en-gb/">
+          <img ngOptimizedImage src="assets/footer_info_awards.png" alt="Deloitte Fast 50, Cyber Essentials, Great place to work" width="450" height="225">
+        </a>
+      </div>
+      <div class="footer-menu">
+        @for (group of footerData; track group) {
+          <nav class="footer-nav">
+            <h3>{{ group.group }}</h3>
+            <ul>
+              @for (link of group.links; track link) {
+                <li>
+                  <a [href]="link.url">
+                    <mat-icon>chevron_right</mat-icon>
+                    {{ link.label }}
+                  </a>
+                </li>
+              }
+            </ul>
+          </nav>
+        }
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; 2024 PlotBox. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
