@@ -1,6 +1,12 @@
 # PlotboxAi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+This project integrates the Postcodes.io API to allow users to search for UK postcodes and display their geographical information. The application is built using Angular 17.3.4 and includes the following features:
+Search functionality to input a UK postcode
+Retrieval of geographical data (latitude, longitude, county, etc.) for the entered postcode
+Display of the retrieved postcode information in a user-friendly format
+
+![image](https://github.com/venkatakondareddyb/plotbox-ai/assets/124066217/c993e3b7-9b22-49cb-8ba2-791f39de0907)
+
 
 ## Development server
 
